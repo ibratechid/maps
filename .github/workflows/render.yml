@@ -1,0 +1,41 @@
+name: Render videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "File config (.csv/.json) atau folder. Default: semua file di folder configs"
+        required: true
+        default: "configs"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install ffmpeg dan font emoji
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-color-emoji
+
+      - name: Install dependency
+        run: npm install
+
+      - name: Render
+        run: node render.js "${{ github.event.inputs.config }}"
+
+      - name: Upload hasil
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: |
+            out/*.mp4
+            out/*-frame.png
+          retention-days: 7
