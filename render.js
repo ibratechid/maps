@@ -31,7 +31,7 @@ function readMeta(file) {
   for (const line of txt.split(/\r?\n/)) {
     const r = line.match(/^#\s*([a-z_]+)\s*[,;]\s*(.*)$/i);
     if (!r) continue;
-    const k = r[1].toLowerCase(), v = clean(r[2]);
+    const k = r[1].toLowerCase(), v = clean(r[2].split(/[,;]/)[0]);
     if (k === 'duration' && +v >= 5 && +v <= 10) meta.dur = +v;
     else if (k === 'media' && v) meta.media.push(v);
     else if (k === 'music') m.file = v;
@@ -52,6 +52,24 @@ function startServer() {
     fs.createReadStream(p).pipe(res);
   });
   return new Promise(r => srv.listen(0, '127.0.0.1', () => r(srv)));
+}
+
+function probeDur(file) {
+  const r = spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', file], { encoding: 'utf8' });
+  const d = parseFloat(String(r.stdout || '').trim());
+  return r.status === 0 && d > 0 ? d : 0;
+}
+
+// Decode musik ke WAV bersih (tanpa cover art/tag) supaya bisa di-loop dan di-seek dengan aman
+function prepMusic(file, tmp) {
+  const wav = path.join(tmp, 'music.wav');
+  const r = spawnSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-i', file, '-vn', '-ac', '2', '-ar', '44100', '-t', '900', wav], { encoding: 'utf8' });
+  if (r.status !== 0 || !fs.existsSync(wav) || fs.statSync(wav).size < 2000) {
+    console.log('  PERINGATAN: file musik tidak bisa dibaca, video dibuat tanpa suara. Ukuran file:', fs.statSync(file).size, 'byte.');
+    console.log('  Kemungkinan file rusak, terpotong saat upload, atau bukan audio asli. Detail:', String(r.stderr || '').split('\n').slice(0, 3).join(' | '));
+    return null;
+  }
+  return wav;
 }
 
 function ff(args) {
@@ -84,7 +102,14 @@ async function renderOne(browser, port, cfgPath) {
   await page.close();
 
   // Footage: lewati file yang tidak ada
-  const clips = meta.media.filter(f => { const ok = fs.existsSync(path.join(ROOT, f)); if (!ok) console.log('  PERINGATAN: footage tidak ditemukan, dilewati:', f); return ok; });
+  const clips = meta.media.filter(f => {
+    const full = path.join(ROOT, f);
+    if (!fs.existsSync(full)) { console.log('  PERINGATAN: footage tidak ditemukan, dilewati:', f); return false; }
+    if (!/\.(jpe?g|png|webp)$/i.test(f) && !probeDur(full)) { console.log('  PERINGATAN: footage tidak bisa dibaca (rusak?), dilewati:', f); return false; }
+    return true;
+  });
+  console.log('  Footage dipakai:', clips.length ? clips.join(', ') : 'TIDAK ADA. Tambahkan baris "# media,assets/footage/nama.mp4" di config.');
+  console.log('  Musik:', meta.music ? meta.music.file : 'TIDAK ADA. Tambahkan baris "# music,assets/music/nama.mp3" di config.');
   const L = dur / Math.max(1, clips.length);
   const args = ['-f', 'lavfi', '-i', `color=c=0x0a121b:s=${W}x${H}:r=${FPS}:d=${dur}`, '-framerate', String(FPS), '-i', path.join(tmp, 'f%04d.png')];
   const fc = [];
@@ -103,13 +128,16 @@ async function renderOne(browser, port, cfgPath) {
   } else fc.push(`[0:v][1:v]overlay=0:0:format=auto:shortest=1,${post}[v]`);
 
   let hasAudio = false;
-  if (meta.music && fs.existsSync(path.join(ROOT, meta.music.file))) {
+  const musicSrc = meta.music ? path.join(ROOT, meta.music.file) : null;
+  const musicWav = musicSrc && fs.existsSync(musicSrc) ? prepMusic(musicSrc, tmp) : null;
+  if (musicWav) {
     const m = meta.music, ai = 2 + clips.length; hasAudio = true;
-    args.push('-ss', String(m.start), '-stream_loop', '-1', '-i', path.join(ROOT, m.file));
+    const md = probeDur(musicWav) || 1, st = m.start >= md ? m.start % md : m.start;
+    args.push('-ss', String(st), '-stream_loop', '-1', '-i', musicWav);
     let af = `[${ai}:a]atrim=0:${dur},asetpts=PTS-STARTPTS,volume=${m.volume},afade=t=in:st=0:d=0.15`;
     if (m.fade > 0) af += `,afade=t=out:st=${Math.max(0.2, dur - m.fade)}:d=${m.fade}`;
     fc.push(af + '[a]');
-  } else if (meta.music) console.log('  PERINGATAN: musik tidak ditemukan, video dibuat tanpa suara:', meta.music.file);
+  } else if (meta.music && !fs.existsSync(musicSrc)) console.log('  PERINGATAN: musik tidak ditemukan, video dibuat tanpa suara:', meta.music.file);
 
   const out = path.join(ROOT, 'out', name + '.mp4');
   args.push('-filter_complex', fc.join(';'), '-map', '[v]');
