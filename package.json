@@ -1,0 +1,8 @@
+{
+  "name": "map-shorts-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generator Shorts peta dunia (9:16, 1080x1920) dengan render MP4 via GitHub Actions",
+  "scripts": { "render": "node render.js configs" },
+  "dependencies": { "puppeteer": "^23.11.1" }
+}
