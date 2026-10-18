@@ -1,0 +1,22 @@
+﻿# title,Countries With the Most *Wild Tigers*
+# sub,"Latest national surveys, 2021 to 2026"
+# handle,@TopRankDaily
+# cta,Which country surprised you? 👇
+# duration,9
+# highlight,#E8590C
+# cta_color,#FFD23F
+# media,assets/footage/footage.mp4
+# music,assets/music/music.mp3
+# music_start,0
+# music_volume,0.8
+# music_fade,1
+country,group,color,name
+IN,"3,000+ tigers",#8B1E1E,India
+RU,300 to 800,#E8590C,Russia
+ID,300 to 800,,Indonesia
+NP,300 to 800,,Nepal
+TH,100 to 300,#F59F00,Thailand
+BT,100 to 300,,Bhutan
+BD,100 to 300,,Bangladesh
+CN,Under 100,#FFD43B,China
+MM,Under 100,,Myanmar
