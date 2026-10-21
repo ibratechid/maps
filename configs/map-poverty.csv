@@ -1,0 +1,36 @@
+﻿# title,Countries with the Most *People in Extreme Poverty*
+# sub,How many people live on less than $3 a day?
+# handle,@TopRankDaily
+# cta,Comment your country 👇
+# duration,9
+# highlight,#DC2626
+# cta_color,#FFD23F
+country,group,color,name
+NG,Over 50 million people,#7F1D1D,Nigeria
+CD,Over 50 million people,#7F1D1D,DR Congo
+IN,Over 50 million people,#7F1D1D,India
+ET,20–50 million people,#DC2626,Ethiopia
+TZ,20–50 million people,#DC2626,Tanzania
+MZ,20–50 million people,#DC2626,Mozambique
+MG,20–50 million people,#DC2626,Madagascar
+SD,20–50 million people,#DC2626,Sudan
+KE,10–20 million people,#F97316,Kenya
+UG,10–20 million people,#F97316,Uganda
+MW,10–20 million people,#F97316,Malawi
+ZM,10–20 million people,#F97316,Zambia
+AO,10–20 million people,#F97316,Angola
+NE,10–20 million people,#F97316,Niger
+BF,10–20 million people,#F97316,Burkina Faso
+BD,10–20 million people,#F97316,Bangladesh
+PK,10–20 million people,#F97316,Pakistan
+SS,5–10 million people,#FBBF24,South Sudan
+TD,5–10 million people,#FBBF24,Chad
+ZW,5–10 million people,#FBBF24,Zimbabwe
+ML,5–10 million people,#FBBF24,Mali
+SO,5–10 million people,#FBBF24,Somalia
+BI,5–10 million people,#FBBF24,Burundi
+CM,5–10 million people,#FBBF24,Cameroon
+CI,5–10 million people,#FBBF24,Ivory Coast
+YE,5–10 million people,#FBBF24,Yemen
+HT,5–10 million people,#FBBF24,Haiti
+ID,5–10 million people,#FBBF24,Indonesia
