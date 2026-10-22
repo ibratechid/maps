@@ -1,0 +1,199 @@
+﻿# title,Negara Mana yang Paling Banyak Minum *Alkohol*?,,,
+# sub,Liter alkohol murni per orang usia 15+ per tahun,,,
+# handle,Sumber: WHO 2019,,,
+# cta,RUMANIA,,,
+# duration,12,,,
+# highlight,#F97316,,,
+# cta_color,#FFD23F,,,
+# media,assets/footage/footage.mp4,,,
+# music,assets/music/music.mp3,,,
+country,group,color,name,liters_per_capita
+RO,Di atas 11 liter,#7F1D1D,Rumania,17
+GE,Di atas 11 liter,#7F1D1D,Georgia,14.3
+CZ,Di atas 11 liter,#7F1D1D,Ceko,13.3
+LV,Di atas 11 liter,#7F1D1D,Latvia,13.1
+DE,Di atas 11 liter,#7F1D1D,Jerman,12.2
+UG,Di atas 11 liter,#7F1D1D,Uganda,12.2
+SC,Di atas 11 liter,#7F1D1D,Seychelles,12
+AT,Di atas 11 liter,#7F1D1D,Austria,12
+BG,Di atas 11 liter,#7F1D1D,Bulgaria,11.9
+LT,Di atas 11 liter,#7F1D1D,Lituania,11.8
+IE,Di atas 11 liter,#7F1D1D,Irlandia,11.7
+PL,Di atas 11 liter,#7F1D1D,Polandia,11.6
+LA,Di atas 11 liter,#7F1D1D,Laos,11.5
+LU,Di atas 11 liter,#7F1D1D,Luksemburg,11.5
+MD,Di atas 11 liter,#7F1D1D,Moldova,11.4
+EE,Di atas 11 liter,#7F1D1D,Estonia,11.3
+FR,Di atas 11 liter,#7F1D1D,Prancis,11.3
+AD,Di atas 11 liter,#7F1D1D,Andorra,11.1
+SI,8-11 liter,#DC2626,Slovenia,11
+BY,8-11 liter,#DC2626,Belarus,10.9
+ES,8-11 liter,#DC2626,Spanyol,10.9
+GB,8-11 liter,#DC2626,Inggris Raya,10.8
+CK,8-11 liter,#DC2626,Kepulauan Cook,10.6
+HU,8-11 liter,#DC2626,Hungaria,10.6
+SK,8-11 liter,#DC2626,Slovakia,10.5
+PT,8-11 liter,#DC2626,Portugal,10.4
+RU,8-11 liter,#DC2626,Rusia,10.4
+CH,8-11 liter,#DC2626,Swiss,10.4
+TZ,8-11 liter,#DC2626,Tanzania,10.4
+BE,8-11 liter,#DC2626,Belgia,10.3
+ME,8-11 liter,#DC2626,Montenegro,10.3
+AU,8-11 liter,#DC2626,Australia,10.1
+CM,8-11 liter,#DC2626,Kamerun,10.1
+CA,8-11 liter,#DC2626,Kanada,9.9
+NZ,8-11 liter,#DC2626,Selandia Baru,9.9
+BF,8-11 liter,#DC2626,Burkina Faso,9.8
+US,8-11 liter,#DC2626,Amerika Serikat,9.6
+BB,8-11 liter,#DC2626,Barbados,9.5
+LC,8-11 liter,#DC2626,Saint Lucia,9.5
+DK,8-11 liter,#DC2626,Denmark,9.4
+NL,8-11 liter,#DC2626,Belanda,9.3
+NU,8-11 liter,#DC2626,Niue,9.3
+SE,8-11 liter,#DC2626,Swedia,9.3
+VN,8-11 liter,#DC2626,Vietnam,9.3
+FI,8-11 liter,#DC2626,Finlandia,9.2
+ZA,8-11 liter,#DC2626,Afrika Selatan,8.8
+UA,8-11 liter,#DC2626,Ukraina,8.7
+AG,8-11 liter,#DC2626,Antigua dan Barbuda,8.5
+KH,8-11 liter,#DC2626,Kamboja,8.5
+HR,8-11 liter,#DC2626,Kroasia,8.5
+MT,8-11 liter,#DC2626,Malta,8.5
+BJ,8-11 liter,#DC2626,Benin,8.3
+BW,8-11 liter,#DC2626,Botswana,8.2
+KR,8-11 liter,#DC2626,Korea Selatan,8.2
+CY,8-11 liter,#DC2626,Siprus,8.1
+SZ,8-11 liter,#DC2626,Eswatini,8.1
+GD,8-11 liter,#DC2626,Grenada,8.1
+IS,8-11 liter,#DC2626,Islandia,8.1
+AR,5-8 liter,#F97316,Argentina,8
+IT,5-8 liter,#F97316,Italia,8
+MN,5-8 liter,#F97316,Mongolia,7.9
+RS,5-8 liter,#F97316,Serbia,7.9
+TH,5-8 liter,#F97316,Thailand,7.8
+BR,5-8 liter,#F97316,Brasil,7.7
+MU,5-8 liter,#F97316,Mauritius,7.5
+PE,5-8 liter,#F97316,Peru,7.5
+GA,5-8 liter,#F97316,Gabon,7.3
+VC,5-8 liter,#F97316,Saint Vincent dan Grenadine,7.2
+GR,5-8 liter,#F97316,Yunani,7.1
+GQ,5-8 liter,#F97316,Guinea Khatulistiwa,6.9
+DO,5-8 liter,#F97316,Republik Dominika,6.8
+NO,5-8 liter,#F97316,Norwegia,6.8
+CL,5-8 liter,#F97316,Cile,6.7
+JP,5-8 liter,#F97316,Jepang,6.7
+PA,5-8 liter,#F97316,Panama,6.6
+SR,5-8 liter,#F97316,Suriname,6.6
+BA,5-8 liter,#F97316,Bosnia dan Herzegovina,6.4
+CG,5-8 liter,#F97316,Republik Kongo,6.4
+CV,5-8 liter,#F97316,Tanjung Verde,6.3
+KN,5-8 liter,#F97316,Saint Kitts dan Nevis,6.3
+AO,5-8 liter,#F97316,Angola,6.2
+PH,5-8 liter,#F97316,Filipina,6.2
+DM,5-8 liter,#F97316,Dominika,6.1
+TT,5-8 liter,#F97316,Trinidad dan Tobago,6.1
+CU,5-8 liter,#F97316,Kuba,6
+NA,5-8 liter,#F97316,Namibia,5.9
+BZ,5-8 liter,#F97316,Belize,5.7
+CN,5-8 liter,#F97316,Tiongkok,5.7
+MX,5-8 liter,#F97316,Meksiko,5.7
+PY,5-8 liter,#F97316,Paraguay,5.6
+UY,5-8 liter,#F97316,Uruguay,5.5
+GY,5-8 liter,#F97316,Guyana,5.3
+AL,5-8 liter,#F97316,Albania,5.1
+AM,2-5 liter,#FBBF24,Armenia,5
+KG,2-5 liter,#FBBF24,Kirgizstan,5
+ST,2-5 liter,#FBBF24,Sao Tome dan Principe,5
+CO,2-5 liter,#FBBF24,Kolombia,4.9
+IN,2-5 liter,#FBBF24,India,4.9
+MK,2-5 liter,#FBBF24,Makedonia Utara,4.6
+GH,2-5 liter,#FBBF24,Ghana,4.5
+KZ,2-5 liter,#FBBF24,Kazakhstan,4.5
+LS,2-5 liter,#FBBF24,Lesotho,4.5
+BS,2-5 liter,#FBBF24,Bahama,4.4
+ML,2-5 liter,#FBBF24,Mali,4.3
+KP,2-5 liter,#FBBF24,Korea Utara,4.3
+NI,2-5 liter,#FBBF24,Nikaragua,4.2
+NG,2-5 liter,#FBBF24,Nigeria,4.2
+BO,2-5 liter,#FBBF24,Bolivia,4.1
+BI,2-5 liter,#FBBF24,Burundi,4.1
+GW,2-5 liter,#FBBF24,Guinea-Bissau,4.1
+ZM,2-5 liter,#FBBF24,Zambia,3.9
+TD,2-5 liter,#FBBF24,Chad,3.7
+JM,2-5 liter,#FBBF24,Jamaika,3.6
+LR,2-5 liter,#FBBF24,Liberia,3.6
+ZW,2-5 liter,#FBBF24,Zimbabwe,3.6
+CR,2-5 liter,#FBBF24,Kosta Rika,3.5
+HT,2-5 liter,#FBBF24,Haiti,3.5
+ET,2-5 liter,#FBBF24,Etiopia,3.4
+FJ,2-5 liter,#FBBF24,Fiji,3.4
+EC,2-5 liter,#FBBF24,Ekuador,3.3
+SV,2-5 liter,#FBBF24,El Salvador,3.3
+HN,2-5 liter,#FBBF24,Honduras,3.2
+MW,2-5 liter,#FBBF24,Malawi,3.2
+IL,2-5 liter,#FBBF24,Israel,3
+VE,2-5 liter,#FBBF24,Venezuela,3
+KE,2-5 liter,#FBBF24,Kenya,2.9
+NR,2-5 liter,#FBBF24,Nauru,2.9
+TM,2-5 liter,#FBBF24,Turkmenistan,2.9
+CI,2-5 liter,#FBBF24,Pantai Gading,2.8
+LK,2-5 liter,#FBBF24,Sri Lanka,2.8
+UZ,2-5 liter,#FBBF24,Uzbekistan,2.6
+WS,2-5 liter,#FBBF24,Samoa,2.4
+AE,2-5 liter,#FBBF24,Uni Emirat Arab,2.4
+CD,2-5 liter,#FBBF24,Republik Demokratik Kongo,2.1
+FM,2-5 liter,#FBBF24,Mikronesia,2.1
+MM,2-5 liter,#FBBF24,Myanmar,2.1
+AZ,0-2 liter,#FDE68A,Azerbaijan,2
+CF,0-2 liter,#FDE68A,Republik Afrika Tengah,2
+MZ,0-2 liter,#FDE68A,Mozambik,2
+TN,0-2 liter,#FDE68A,Tunisia,2
+RW,0-2 liter,#FDE68A,Rwanda,1.9
+SG,0-2 liter,#FDE68A,Singapura,1.9
+VU,0-2 liter,#FDE68A,Vanuatu,1.9
+TR,0-2 liter,#FDE68A,Turki,1.8
+PG,0-2 liter,#FDE68A,Papua Nugini,1.7
+BH,0-2 liter,#FDE68A,Bahrain,1.6
+GT,0-2 liter,#FDE68A,Guatemala,1.6
+SB,0-2 liter,#FDE68A,Kepulauan Solomon,1.6
+LB,0-2 liter,#FDE68A,Lebanon,1.5
+MV,0-2 liter,#FDE68A,Maladewa,1.4
+NP,0-2 liter,#FDE68A,Nepal,1.4
+TG,0-2 liter,#FDE68A,Togo,1.4
+ER,0-2 liter,#FDE68A,Eritrea,1.2
+TV,0-2 liter,#FDE68A,Tuvalu,1.2
+GM,0-2 liter,#FDE68A,Gambia,1.1
+QA,0-2 liter,#FDE68A,Qatar,1.1
+MG,0-2 liter,#FDE68A,Madagaskar,1
+OM,0-2 liter,#FDE68A,Oman,0.9
+TJ,0-2 liter,#FDE68A,Tajikistan,0.9
+KI,0-2 liter,#FDE68A,Kiribati,0.8
+MY,0-2 liter,#FDE68A,Malaysia,0.8
+IR,0-2 liter,#FDE68A,Iran,0.7
+DZ,0-2 liter,#FDE68A,Aljazair,0.6
+GN,0-2 liter,#FDE68A,Guinea,0.5
+MA,0-2 liter,#FDE68A,Maroko,0.5
+BN,0-2 liter,#FDE68A,Brunei,0.4
+DJ,0-2 liter,#FDE68A,Djibouti,0.4
+SN,0-2 liter,#FDE68A,Senegal,0.4
+TL,0-2 liter,#FDE68A,Timor Leste,0.4
+TO,0-2 liter,#FDE68A,Tonga,0.4
+KM,0-2 liter,#FDE68A,Komoro,0.3
+JO,0-2 liter,#FDE68A,Yordania,0.3
+SL,0-2 liter,#FDE68A,Sierra Leone,0.3
+AF,0-2 liter,#FDE68A,Afganistan,0.2
+BT,0-2 liter,#FDE68A,Bhutan,0.2
+IQ,0-2 liter,#FDE68A,Irak,0.2
+SY,0-2 liter,#FDE68A,Suriah,0.2
+BD,0-2 liter,#FDE68A,Bangladesh,0.1
+EG,0-2 liter,#FDE68A,Mesir,0.1
+ID,0-2 liter,#FDE68A,Indonesia,0.1
+KW,0-2 liter,#FDE68A,Kuwait,0.1
+LY,0-2 liter,#FDE68A,Libya,0.1
+MR,0-2 liter,#FDE68A,Mauritania,0.1
+NE,0-2 liter,#FDE68A,Niger,0.1
+PK,0-2 liter,#FDE68A,Pakistan,0.1
+SA,0-2 liter,#FDE68A,Arab Saudi,0.1
+SO,0-2 liter,#FDE68A,Somalia,0.1
+SD,0-2 liter,#FDE68A,Sudan,0.1
+YE,0-2 liter,#FDE68A,Yaman,0.1
